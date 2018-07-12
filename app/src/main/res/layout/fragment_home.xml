@@ -1,0 +1,172 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kozjava.music_clientV2_1.fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="265dp"
+        android:layout_gravity="top"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#DEDEDE">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="2dp"
+                android:src="@drawable/music_icon" />
+
+            <TextView
+                android:id="@+id/helloText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="28dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="353dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:text="Ник :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/helloid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="55dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="45dp"
+                android:text="Почта :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/helloemail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="75dp"
+                android:paddingTop="45dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="75dp"
+                android:text="Имя :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/helloname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="75dp"
+                android:paddingTop="75dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="105dp"
+                android:text="Фамилия :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hellosurname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="95dp"
+                android:paddingTop="105dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="15dp"
+                android:paddingTop="135dp"
+                android:text="ID :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/helloiddown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="55dp"
+                android:paddingTop="135dp"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_music"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="320dp"
+        android:padding="12dp"
+        android:text="Музыка" />
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="390dp"
+        android:padding="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Плейлисты" />
+</FrameLayout>
